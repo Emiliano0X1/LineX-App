@@ -1,6 +1,10 @@
+"use client";
+
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { AvatarImage } from "@radix-ui/react-avatar"
+import { useState } from "react"
+import ButtonsSideBar from "./buttonsSideBar";
 
 type user = {
     name : string,
@@ -22,17 +26,8 @@ export default function SideBar({name,email} : user){
                 <p className="text-sm text-white">{email}</p>
             </div>
 
-            <div className="mt-18 flex flex-col justify-center items-center">
-                <Button variant="outline" className="w-full p-6 rounded-r-none bg-slate-300 border-slate-300 hover:bg-slate-300 hover:border-slate-300 text-cyan-900 hover:text-cyan-900 ">Dashboard</Button>
-                <Button variant="outline" className="w-full p-6 rounded-none bg-cyan-900 border-cyan-900 hover:bg-cyan-900 hover:border-cyan-900 text-slate-300">Line X Lines</Button>
-                <Button variant="outline" className="w-full p-6 rounded-none bg-cyan-900 border-cyan-900 hover:bg-cyan-900 hover:border-cyan-900 text-slate-300" >Predicciones</Button>
-                <Button variant="outline" className="w-full p-6 rounded-none bg-cyan-900 border-cyan-900 hover:bg-cyan-900 hover:border-cyan-900 text-slate-300">Ayuda</Button>
-                <Button variant="outline" className="w-full p-6 rounded-none bg-cyan-900 border-cyan-900 hover:bg-cyan-900 hover:border-cyan-900 text-slate-300">Configuracion</Button>
+            <ButtonsSideBar></ButtonsSideBar>
 
-                <div className="mt-24">
-                    <Button variant="outline" className="w-full p-6 rounded-none bg-cyan-900 border-cyan-900 hover:bg-cyan-900 hover:border-cyan-900 text-slate-300 hover:text-red-400">Cerrar Sesion</Button>
-                </div>  
-            </div>
         </div>
     )
 }
