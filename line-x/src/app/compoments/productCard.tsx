@@ -14,7 +14,6 @@ export default function ProductoCard({name,imageURL} : product) {
                     <CardHeader>
                         <CardTitle className="text-center">{name}</CardTitle>
                     </CardHeader>
-
                     <CardContent className="flex justify-center">
                         <img src={imageURL} alt={name} className="w-20 h-auto" />
                     </CardContent>
@@ -24,13 +23,13 @@ export default function ProductoCard({name,imageURL} : product) {
             <div className="w-1/6 flex flex-col items-center">
                 <h4 className="mb-4 text-center">Tipo de Producto</h4>
                 <Card className="h-24 w-full flex items-center justify-center">
-                    <CardTitle>Industrial</CardTitle>
+                    <CardTitle className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-2xl">Industrial</CardTitle>
                 </Card>
             </div>
 
             <InfoCard numero="459k" title="Stock"></InfoCard>
             <InfoCard numero="345k" title="Ordenes"></InfoCard>
-            <InfoCard numero="123k" title="Ingreses"></InfoCard>
+            <InfoCard numero="123k" title="Ingresos"></InfoCard>
         </div>
     )
 }

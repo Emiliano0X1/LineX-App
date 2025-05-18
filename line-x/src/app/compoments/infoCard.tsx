@@ -10,7 +10,7 @@ export default function InfoCard({numero,title} : info){
        <div className="w-1/6 flex flex-col items-center">
             <h4 className="mb-4 text-center">{title}</h4>
             <Card className="h-24 w-full flex items-center justify-center">
-                <CardTitle>{numero}</CardTitle>
+                <CardTitle className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-2xl">{numero}</CardTitle>
             </Card>
         </div>
     )   
