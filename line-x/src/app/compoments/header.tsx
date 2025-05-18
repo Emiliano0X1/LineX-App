@@ -1,7 +1,6 @@
 import { Switch } from "@/components/ui/switch"
 import { Download } from "lucide-react"
 
-
 type user = {
     name : string,
     userType : string

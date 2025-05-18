@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import { usePages } from "../context"
 
 export default function ButtonsSideBar(){
     const [selectedButton,setSelectedButton] = useState("")
 
+    const {managePages} = usePages();
+
     const handleSelectColor = (button : string) => {
         setSelectedButton(button)
+        managePages(button)
     }
     
     const buttons = [
