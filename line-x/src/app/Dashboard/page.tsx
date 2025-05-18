@@ -25,7 +25,7 @@ export default function DashBoard(){
             <SideBar name="Emiliano Gonzalez" email="egp2506@gmail.com"></SideBar>
             <div className="flex-1 flex flex-col">
                 <div className="w-full">
-                    <Header name="Emiliano Gonzalez" userType="CEO" nameCompany="L.A Chetto"></Header>
+                    <Header name="Emiliano Gonzalez" userType="CEO" nameCompany="L.A Cetto"></Header>
                 </div>
                 {pages.find((page) => page.value === String(pageDash.pageDash))?.label}
             </div>    
