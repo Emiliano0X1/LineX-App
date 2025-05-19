@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import SideBar from "../compoments/sideBar";
 import LineXLines from "../Linex_line/page";
 import ProductInfo from "../ProductInfo/page";

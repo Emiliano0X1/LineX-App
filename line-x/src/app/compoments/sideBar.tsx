@@ -1,9 +1,7 @@
 "use client";
 
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
 import { AvatarImage } from "@radix-ui/react-avatar"
-import { useState } from "react"
 import ButtonsSideBar from "./buttonsSideBar";
 
 type user = {

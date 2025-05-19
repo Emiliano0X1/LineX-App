@@ -1,7 +1,6 @@
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import ProductoCard from "../compoments/productCard";
 import MiddleCharts from "../compoments/middleCharts";
-import EndChart from "../compoments/endChart";
 
 export default function ProductInfo(){
     return(
