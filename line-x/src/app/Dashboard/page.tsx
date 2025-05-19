@@ -6,6 +6,7 @@ import LineXLines from "../Linex_line/page";
 import ProductInfo from "../ProductInfo/page";
 import Header from "../compoments/header";
 import { usePages } from "../context";
+import AyudaScreen from "../Ayuda/page";
 
 export default function DashBoard(){
 
@@ -16,7 +17,7 @@ export default function DashBoard(){
         {label : <ProductInfo></ProductInfo>, value : "dashboard"},
         {label : <LineXLines></LineXLines>, value : "linexl"},
         {value : "predicciones"},
-        {value : "ayuda"},
+        {label: <AyudaScreen></AyudaScreen>, value : "ayuda"},
         {value : "config"}
     ]
 
