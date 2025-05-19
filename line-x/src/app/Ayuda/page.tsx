@@ -1,9 +1,3 @@
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import ProductoCard from "../compoments/productCard";
-import MiddleCharts from "../compoments/middleCharts";
-import EndChart from "../compoments/endChart";
-import { icons } from "lucide-react";
-
 export default function AyudaScreen(){
 
     const botones = [
